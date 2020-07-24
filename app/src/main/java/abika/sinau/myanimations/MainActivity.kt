@@ -23,12 +23,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        txtMessage = findViewById<TextView>(R.id.text)
-        btn = findViewById<Button>(R.id.btn)
+        txtMessage = findViewById(R.id.text)
+        btn = findViewById(R.id.btn)
         //loading Animation
         animFadein = AnimationUtils.loadAnimation(
-                applicationContext,
-                R.anim.fade_in)
+            applicationContext,
+            R.anim.fade_in
+        )
 
         //handling aniamtion on button click
         btn.setOnClickListener {
